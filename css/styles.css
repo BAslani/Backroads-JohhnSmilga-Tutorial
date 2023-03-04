@@ -253,69 +253,70 @@ Navbar
   border-left: 0.25rem solid var(--clr-primary-3);
 }
 
-.navLinks{
+.navLinks {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
 }
 
-.show-links{
+.show-links {
   height: 280px;
 }
 
-@media screen and (min-width: 992px){
-  .navbar{
+@media screen and (min-width: 992px) {
+  .navbar {
     padding: 1rem 2rem;
   }
 
-  .nav-toggle{
+  .nav-toggle {
     display: none;
   }
 
-  .navHeader{
+  .navHeader {
     padding: 0 0;
   }
-  
-  .navCenter{
+
+  .navCenter {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .navLinks{
+  .navLinks {
     height: auto;
     display: flex;
     align-items: center;
   }
 
-  .navLink{
+  .navLink {
     padding: 0 0;
     margin-right: 1rem;
   }
-  
-  .navLink:hover{
+
+  .navLink:hover {
     background: transparent;
     padding: 0;
     color: var(--clr-primary-5);
     border: none;
   }
 
-  .navIcons{
+  .navIcons {
     display: flex;
   }
 
-  .navIcon{
+  .navIcon {
     margin-right: 1rem;
     color: var(--clr-primary-5);
     font-size: 1.2rem;
     transition: var(--transition);
   }
 
-  .navIcon:hover{
+  .navIcon:hover {
     color: var(--clr-primary-1);
   }
 
 }
+
 /*
 =============== 
 Hero
@@ -511,6 +512,7 @@ Featured Tours
 
 .tourImg {
   height: 15rem;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -605,6 +607,22 @@ Contact
   border: none;
 }
 
+.formControl::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.formControl::-moz-placeholder {
+  color: inherit;
+}
+
+.formControl:-ms-input-placeholder {
+  color: inherit;
+}
+
+.formControl::-ms-input-placeholder {
+  color: inherit;
+}
+
 .formControl::placeholder {
   color: inherit;
 }
@@ -663,6 +681,7 @@ Gallery
 
 .galleryImg {
   height: 17rem;
+  -o-object-fit: cover;
   object-fit: cover;
   transition: var(--transition);
 }
